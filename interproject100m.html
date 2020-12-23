@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function f1()
+{
+	var a=document.getElementById('n1');
+		if(a.value==null || a.value=="")
+	    {
+	     alert(" Name should not be blank");
+	     x.focus();
+	     return false; 
+	    }
+		
+        var date=document.getElementById('n2');
+        if(isNaN(date.value) || date.value<8|| date/value==null|| date.value=="")
+        {
+        	alert("THE DATE YOU ENTERED IS WRONG")
+        	date.focus();
+        	return false;
+        }
+        else
+        {
+        	alert("you have entered wrong data please enter data in correct format")
+        	date.focus();
+        	return false;
+        }
+        return true;
+}
+</script>
+</head>
+<body style="background-color:black">
+
+<CENTER><h4 style="color:white">SIGN UP</h4></CENTER>
+
+<center>
+<form onSubmit="f1()">
+<p style="color:white">
+
+	NAME<input type="text" id="n1"><br>
+	DATE OF BIRTH<input type="date" id="n2"><br>
+	OCCUPATION<input type="text" id="n1"><br>
+	STATUS
+	<select>
+		<option>DEAD</option>
+		<option>ALIVE</option>
+	</select><br>
+    NICKNAME<input type="text" id="n1"><br>
+    <input type="submit" name="submit">
+
+</p>
+</center>
+</form>
+</body>
+</html>
